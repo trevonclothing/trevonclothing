@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300..900&family=Open+Sans:wght@300..800&display=swap');
+/* Testando 123 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, #00bf61, #ff3131);
+    min-height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    text-align: center;
+    padding: 10px 10px; /* Reduzido ainda mais */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Reduzido para aproximar a logo do texto */
+}
+
+.navigator-container p {
+    font-family: "League Spartan", sans-serif;
+    font-size: 32px; /* Menor ainda */
+    font-weight: bold;
+    margin: 0; /* Remover margem extra */
+}
+
+.highlight {
+    color: #ff3131;
+}
+
+.highlight2 {
+    color: #00bf61;
+}
+
+/* Estilo para a logo */
+.logo {
+    width: 80px;  /* Reduzido mais ainda */
+    height: auto;
+    max-width: 100%;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px; /* Reduzido mais */
+    gap: 20px; /* Diminuir o espaçamento */
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.catalog-container, .contact-container {
+    width: 48%;
+    background-color: rgba(0, 191, 97, 0.9);
+    color: white;
+    padding: 20px; /* Menos padding */
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.catalog-container:hover, .contact-container:hover {
+    transform: translateY(-5px);
+}
+
+.catalog-container h2, .contact-container h2 {
+    font-size: 24px; /* Menor tamanho para o título */
+    margin-bottom: 15px; /* Menos espaço */
+    font-weight: 600;
+}
+
+.catalog-container p, .contact-container p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.buttons-container {
+    margin-top: 15px; /* Menos margem no botão */
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px; /* Menos padding */
+    font-size: 16px; /* Menor fonte */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-catalogo {
+    background-color: #ff3131;
+    color: white;
+    border: 2px solid #ff3131;
+}
+
+.btn-catalogo:hover {
+    background-color: white;
+    color: #ff3131;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 49, 49, 0.4);
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: 2px solid #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: white;
+    color: #25D366;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* Estilo do Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .about-us {
+        padding: 20px 10px; /* Ajustado para tela menor */
+        gap: 15px; /* Menos gap */
+    }
+
+    .catalog-container, .contact-container {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        padding: 10px 5px;
+        gap: 10px;
+    }
+
+    .catalog-container, .contact-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .buttons-container {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
